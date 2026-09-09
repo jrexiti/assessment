@@ -4,7 +4,9 @@
   "description": "take home assessment",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js src/features/**/*.feature --require \"src/step-definitions/**/*.js\""
+    "test": "cucumber-js src/features/**/*.feature --require \"src/step-definitions/**/*.js\"",
+    "report": "mkdir -p reports && cucumber-js src/features/**/*.feature --require \"src/step-definitions/**/*.js\" --format html:reports/cucumber-report.html",
+    "test:report": "mkdir -p reports && cucumber-js src/features/**/*.feature --require \"src/step-definitions/**/*.js\" --format progress --format html:reports/cucumber-report.html"
   },
   "repository": {
     "type": "git",

@@ -3,7 +3,7 @@ Feature: Cucumber Mathematics
     Scenario Outline: Let's eat cucumbers
         Given I have <starting> cucumbers
         When I eat <eaten> cucumbers
-        Then I have <remaining> cucumbers
+        Then I should have <remaining> cucumbers
 
         Examples:
             | starting | eaten | remaining |
@@ -14,7 +14,7 @@ Feature: Cucumber Mathematics
     Scenario Outline: Let's eat carrots
         Given I have <starting> carrots
         When I eat <eaten> carrots
-        Then I have <remaining> carrots
+        Then I should have <remaining> carrots
 
         Examples:
             | starting | eaten | remaining |
@@ -27,9 +27,9 @@ Feature: Cucumber Mathematics
         And I have <carrots> carrots
         When I eat <cucumbersEaten> cucumbers
         And I eat <carrotsEaten> carrots
-        Then I have <cucumbersRemaining> cucumbers
-        And I have <carrotsRemaining> carrots
-        And I have <totalRemaining> vegetables
+        Then I should have <cucumbersRemaining> cucumbers
+        And I should have <carrotsRemaining> carrots
+        And I should have <totalRemaining> vegetables
 
         Examples:
             | cucumbers | carrots | cucumbersEaten | carrotsEaten | cucumbersRemaining | carrotsRemaining | totalRemaining |

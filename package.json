@@ -1,0 +1,22 @@
+{
+  "name": "assessment",
+  "version": "1.0.0",
+  "description": "take home assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrexiti/assessment.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jrexiti/assessment/issues"
+  },
+  "homepage": "https://github.com/jrexiti/assessment#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1"
+  }
+}

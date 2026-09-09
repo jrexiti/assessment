@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js src/features/**/*.feature --require \"src/step-definitions/**/*.js\"",
-    "report": "mkdir -p reports && cucumber-js src/features/**/*.feature --require \"src/step-definitions/**/*.js\" --format html:reports/cucumber-report.html",
-    "test:report": "mkdir -p reports && cucumber-js src/features/**/*.feature --require \"src/step-definitions/**/*.js\" --format progress --format html:reports/cucumber-report.html"
+    "report": "mkdir -p reports && cucumber-js src/features/**/*.feature --require \"src/step-definitions/**/*.js\" --format \"html:reports/cucumber-report-$(date +%Y-%m-%d_%H-%M-%S).html\"",
+    "test:report": "mkdir -p reports && cucumber-js src/features/**/*.feature --require \"src/step-definitions/**/*.js\" --format progress --format \"html:reports/cucumber-report-$(date +%Y-%m-%d_%H-%M-%S).html\""
   },
   "repository": {
     "type": "git",
